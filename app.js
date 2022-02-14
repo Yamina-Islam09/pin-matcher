@@ -45,7 +45,9 @@ function submit() {
             success.style.display = "block";
             fail.style.display = "none";
             document.getElementById('tryText').style.display = "none";
+
         } else {
+            document.getElementById('displayNumb').value = '';
             document.getElementById('tryText').style.display = "block";
             if (newCountNumber == 0) {
                 count.innerText = "No";
