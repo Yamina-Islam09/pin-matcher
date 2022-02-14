@@ -5,7 +5,7 @@ function getPin() {
     if (pinString.length == 4) {
         return pin;
     } else {
-        console.log("try again");
+        return getPin();
     }
 }
 
